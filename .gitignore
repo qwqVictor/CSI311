@@ -4,3 +4,5 @@ main
 *.doc
 *.docx
 *.pdf
+obj
+bin
