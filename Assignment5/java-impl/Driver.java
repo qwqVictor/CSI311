@@ -54,7 +54,7 @@ public class Driver {
 		System.out.printf("New tree %s", tree);
 
 		int newRand = random.rand();
-		System.err.printf("I'll add a random number %d to the tree. Yes?");
+		System.err.printf("I'll add a random number %d to the tree. Yes?", newRand);
 		if (scn.nextLine() != "No") {
 			tree.insert(newRand);
 			System.out.printf("New tree %s", tree);
