@@ -30,16 +30,16 @@ readline.question("The node you want to remove? Value: ", function (answer) {
     tree.remove(answerInt);
     console.log("New tree");
     console.dir(tree, { depth: null });
-});
 
-var newRand = rand0to100();
-readline.question("I'll add a random number " + newRand + " to the tree. Yes?", function (answer) {
-    if (answer == "No") {
+    var newRand = rand0to100();
+    readline.question("I'll add a random number " + newRand + " to the tree. Yes?", function (answer) {
+        if (answer == "No") {
+            readline.close();
+            return;
+        }
+        tree.insert(newRand);
+        console.log("New tree");
+        console.dir(tree, { depth: null });
         readline.close();
-        return;
-    }
-    tree.insert(newRand);
-    console.log("New tree");
-    console.dir(tree, { depth: null });
-    readline.close();
+    });
 });
