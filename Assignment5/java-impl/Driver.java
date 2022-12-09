@@ -48,6 +48,7 @@ public class Driver {
 
 		System.err.printf("\nThe node you want to remove? Value: ");
 		int node = scn.nextInt();
+		scn.nextLine();
 
 		tree.remove(node);
 
