@@ -11,7 +11,7 @@
  */
 function BaseBinaryTree(rootValue) {
     this.root = {
-        root: rootValue
+        value: rootValue
     };
 }
 /**
